@@ -4,4 +4,4 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
     apt-get update && apt-get -y install python-pip vim gettext-base wget jq && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install pika protobuf==2.6.1
+RUN pip install pika protobuf==3.2.0
